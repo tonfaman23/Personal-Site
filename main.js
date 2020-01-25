@@ -1,4 +1,4 @@
-const projects [{
+const projects = [{
         title: "Product-Cards",
         screenshot: "https://snipboard.io/mJxPUX.jpg",
         description: "Using HTML and CSS to create product cards",
@@ -26,3 +26,5 @@ const projectStr = () => {
     }
     printToDom('projectsPage', domString);
 };
+
+projectStr();
