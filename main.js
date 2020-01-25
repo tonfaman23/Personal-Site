@@ -15,17 +15,19 @@ const printToDom = (divId, textToPrint) => {
     selectedDiv.innerHTML = textToPrint;
 };
 
-const projectStr = () => {
+const createProjectCards = (projectArray) => {
     let domString = '';
-    for (let i = 0; i < projects.length; i++) {
+    for (let i = 0; i < projectArray.length; i++) {
+        if (projectArray[i].available){
         domString += '<div class="Project">';
-        domString += `<header>${projects[i].title}</header>`;
-        domString += `<img src=${projects[i].screenshot}>`;
-        domString += `<p class="Scribe">${projects[i].description}</p>`;
-        domString += `<section class="Link">${projects[i].url}</section>`;
+        domString += `<header>${projectArray[i].title}</header>`;
+        domString += `<img src=${projectArray[i].screenshot}>`;
+        domString += `<p class="Scribe">${projectArray[i].description}</p>`;
+        domString += `<section class="Link">${projectArray[i].url}</section>`;
         domString += '</div>';
+        }
     }
     printToDom('projectsPage', domString);
 };
 
-projectStr();
+createProjectCards(projects);
