@@ -1,8 +1,44 @@
 body{
     background-color: lightyellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bioPage{
+    font-size: 1.9em;
 }
 
 img{
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 90%;
+    border-radius: 25px;
+}
+
+#navLinks{
+    font-size: 1.3em;
+    color: silver;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+.Project{
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex: 0 1 32%;
+    justify-content: space-evenly;
+}
+
+header{
+    text-align: center;
+    background-color: goldenrod;
+    border-radius: 15px;
+}
+
+#projectsPage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
